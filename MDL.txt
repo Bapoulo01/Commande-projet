@@ -1,0 +1,3 @@
+Commande = (idc , datec , montant , etat,#id_client );
+Arrticle = (id , libelle , prix_unitaire , qtestock );
+Avoir = (#idc, #id, qtecomd );
