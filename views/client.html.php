@@ -9,7 +9,7 @@
 <div class="prof-body">
             <div class="container">
                 <h3>LISTE DES CLIENTS</h3>
-                <a href="<?=WEBROOT;?>/?action=new-client"><button class="boo" type="submit">Ajouter</button></a>
+                <a href="<?=WEBROOT;?>/?controller=client&action=new-client"><button class="boo" type="submit">Ajouter</button></a>
 
                 <table class="table-style">
                     <thead>

@@ -27,6 +27,7 @@
                     <input class="input"style="" type="text" name="tel">
                 </div><br>
                 <div class="valid">
+                    <input type="hidden" name="controller" value ="client">
                     <button class="bt" type="reset" name="">Annuler</button>
                     <button class="but" type="submit" name="action" value="addClient">Enregister</button>
                 </div>

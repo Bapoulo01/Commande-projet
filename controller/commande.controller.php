@@ -1,12 +1,17 @@
 <?php
-require_once('../models/commande.model.php');
+// require_once('../models/commande.model.php');
 
 if (isset($_REQUEST["action"])) {
     if ($_REQUEST["action"]=="commande") {
         $commande=findAllcommande();
-        require_once('../views/commande.html.php');
+        loadView("commande.html.php",["commande"=>$commande]);
+
     }elseif ($_REQUEST["action"]=="addcommande") {
-        require_once('../views/ajout.commande.php');
+        loadView("ajout.commande.php");
+
     }
 }
+ else{
+    header("location:".WEBROOT."/?controller=commande&action=commande");  
+    }
 

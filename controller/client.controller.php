@@ -1,13 +1,16 @@
 <?php
-require_once('../models/client.model.php');
+// require_once('../models/client.model.php');
 
 if (isset($_REQUEST["action"])) {
     if ($_REQUEST["action"]=="client") {
         $client=findAllclient();
-        require_once('../views/client.html.php');
+        loadView("client.html.php",["client"=>$client]);
+
     }
     elseif($_REQUEST["action"]=="new-client") {
-        require_once('../views/newclient.html.php');
+        $client=findAllclient();
+        loadView("newclient.html.php",["newclient"=>$client]);
+
     }
     elseif($_REQUEST["action"]=="addClient") {
        
@@ -18,6 +21,9 @@ if (isset($_REQUEST["action"])) {
         ];
         AddClient($newclient);
         
-        header("location:".WEBROOT."/?action=client");  
+        header("location:".WEBROOT."/?controller=client&action=client");  
+
     }
-}
+} else{
+    header("location:".WEBROOT."/?controller=client&action=client");  
+    }
