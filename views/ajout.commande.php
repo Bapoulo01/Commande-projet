@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Ajout commande</title>
 </head>
 <body>
     <div class="prof-body">
@@ -46,6 +46,27 @@
             </div>
             </form>
         </div>
-    </div>
+        <div class="cont2">
+        <table class="table-style">
+        <h3>LISTE DES ARTICLES</h3>
+                    <thead>
+                        <tr>
+                            <td>Libelle</td>
+                            <td>Prix unitaire</td>
+                            <td>Qtestock</td>
+                            <td>montant</td>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Article 1</td>
+                            <td>1000</td>
+                            <td>100</td>
+                            <td>5000</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <?php
 function findAllarticle():array{
-    $sql="select * from article ";
+    $sql="SELECT * FROM `article`
+    LIMIT 5; ";
     $data=null;
     //Classe PDO
     //1-Connexion SGBD et selectionner la BD
