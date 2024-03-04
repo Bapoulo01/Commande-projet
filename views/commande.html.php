@@ -45,7 +45,7 @@ $tab=array_slice($commande  , $position, $nombre_ligne);
 
                         </tr>
                     </thead>
-                    <?php   foreach ($tab as  $value):?>
+                    <?php foreach ($tab as  $value):?>
                     <tbody>
                         <tr>
                             <td><?=$value["prenom"] ." " . $value["nom"]?></td>
@@ -53,7 +53,7 @@ $tab=array_slice($commande  , $position, $nombre_ligne);
                             <td><?=$value["montant"]?></td>
                             <td><?=$value["nometat"]?></td>
                             <td>
-                            <a href="<?=WEBROOT;?>/?controller=article&action=detail"><button class="bo" type="submit">Articles</button></a>
+                            <a href="<?=WEBROOT;?>/?controller=article&action=detail&id=<?=$value["idc"]?>"><button class="bo" type="submit">Articles</button></a>
                             </td>
                             
                         </tr>

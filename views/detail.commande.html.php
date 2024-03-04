@@ -15,13 +15,12 @@
                             <td>Libelle</td>
                             <td>Prix unitaire</td>
                             <td>Qtestock</td>
-                            <td>Reference</td>
+                            <td>Montant</td>
 
                         </tr>
                     </thead>
-                    <?php  
-                    foreach ($detail as  $value):?>
-                    <tbody>
+                    <tbody> 
+                        <?php foreach ($detail as  $value):?>
                         <tr>
                             <td><?=$value["libelle"]?></td>
                             <td><?=$value["prixunitaire"]?></td>

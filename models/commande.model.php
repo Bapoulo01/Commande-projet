@@ -69,9 +69,9 @@
     return $data;
   }
 
-  function findCommandeByDetail(){
-    $sql="select a.`ida`,libelle,prixunitaire,qtestock,c.`montant`,c.`idc` FROM `avoir`av,`commande`c,`article`a,`client`
-    WHERE a.`ida`=av.`ida` AND c.`idc`=av.`idc``";
+  function findCommandeByDetail(int $id):array{
+    $sql="select a.`ida`,libelle,prixunitaire,qtestock,c.`montant`,c.`idc` FROM `avoir`av,`commande`c,`article`a,`client` CL 
+    WHERE a.`ida`=av.`ida` AND c.`idc`=av.`idc` and c.`idc`=$id AND c.id_client=cl.id_client;";
 
   //Classe PDO
   //1-Connexion SGBD et selectionner la BD

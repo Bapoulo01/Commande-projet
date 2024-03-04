@@ -10,9 +10,6 @@ if (isset($_REQUEST["action"])) {
 
     }elseif ($_REQUEST["action"]=="addcommande") {
         loadView("ajout.commande.php");
-    }elseif ($_REQUEST["action"]=="detail"){
-        $detail=findCommandeByDetail();
-        loadVie("detail.commande.php",["commande"=>$detail,]);
     }
 }
  else{
